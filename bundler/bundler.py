@@ -353,7 +353,7 @@ class Bundler:
 
                     return False
 
-                return True
+                return False
 
             lines = filter(prefix_filter, [line.strip() for line in f])
             lines = map(relative_path_map, lines)
