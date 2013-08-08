@@ -403,11 +403,12 @@ class Bundler:
 
         # Then change the id of all libraries. Skipping this part for now
         #for path in paths:
-        #    cmd = os.path.join(os.path.dirname(__file__), "run-install-name-tool-id.sh") + " " + path
-        #    print cmd
-        #    f = os.popen(cmd)
-        #    for line in f:
-        #        print line
+        #    cmd = os.path.join(os.path.dirname(__file__), "run-install-name-tool-change.sh") + " " + path + " "
+						#prefix_path + " Resources" + " id"
+            #print cmd
+						#f = os.popen(cmd)
+			#for line in f:
+		#print line
 
         for framework in self.frameworks:
             fw_name, ext = os.path.splitext(os.path.basename(framework))
